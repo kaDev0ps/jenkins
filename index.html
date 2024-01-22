@@ -1,0 +1,13 @@
+echo "Build Hello World"
+echo "Number $BUILD_NUMBER"
+cat <<EOF > index.html
+<html>
+<body>
+<H1>Круто работает с GitHub b nginx</H1>
+</body>
+</html>
+EOF
+sleep 7
+echo "My name $BUILD_DISPLAY_NAME"
+hostname
+echo "Finished Build Hello World"
